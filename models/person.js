@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const { age } = require('../notes');
+//const { age } = require('../notes');
 
 //define the person schema
 const personSchema=new mongoose.Schema({
@@ -12,7 +12,7 @@ const personSchema=new mongoose.Schema({
     },
     work:{
         type: String,
-        enum: ['chef','manager','owner'],
+        enum: ['Chef','manager','owner'],
         required:true
     },
     mobile:{
